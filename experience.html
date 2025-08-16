@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>🦋 Experience 🦋</title>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- JavaScript file -->
+    <script src="script.js" defer></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Outfit:wght@100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to bottom, #ffb6c1, #e84393, #ffb6c1);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        .timeline-content {
+            position: relative;
+            width: 45%;
+            padding: 20px;
+            background: #fff9fb;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(232, 67, 147, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(232, 67, 147, 0.2);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            width: 15px;
+            height: 15px;
+            background: #e84393;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            border: 3px solid white;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: auto;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-item::before {
+                left: 30px;
+            }
+
+            .timeline-content {
+                width: calc(100% - 70px);
+                margin-left: 70px !important;
+            }
+        }
+
+        .timeline-item.purple::before {
+            background: #7c3aed;
+            border-color: white;
+        }
+
+        .timeline-item.purple .timeline-content {
+            background: #f3e8ff;
+            box-shadow: 0 3px 10px rgba(124, 58, 237, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item.purple .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(124, 58, 237, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloader"
+        style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: white; display: flex; align-items: center; justify-content: center; z-index: 9999;">
+        <lottie-player src="https://lottie.host/244fb894-dafa-4b5c-8b48-821c1faa7ae9/4aoVbbHQLN.json"
+            background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+    </div>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            setTimeout(() => {
+                preloader.classList.add('hidden');
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 600);
+            }, 1500);
+        });
+    </script>
+
+    <style>
+        #preloader.hidden {
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+    </style>
+
+    <header class="portfolio-header">
+        <div class="header-container fade-in-section">
+            <div class="logo">
+                <a href="#introduction">🦋</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Main Site</a></li>
+                    <li><a href="https://www.linkedin.com/in/zuhalolomi/" aria-label="LinkedIn" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/ZuhalOlomi" aria-label="GitHub" target="_blank"><i
+                                class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="fade-in-section"
+            style="max-width: 800px; margin: 40px auto 60px auto; text-align: center; font-family: 'Lexend', sans-serif;">
+            <h1 style="font-weight: 600; font-size: 3rem; color: #242424; margin-bottom: 0.2em; letter-spacing: 1.5px;">
+                Experience
+            </h1>
+            <p style="font-weight: 300; font-size: 1.25rem; color: #555;">
+                <br>A curated journey of research, volunteering, and creative contributions, reflecting my dedication and
+                growth.
+            </p>
+        </section>
+
+
+
+        <section id="timeline" class="section fade-in-section">
+            <div class="timeline fade-in-section">
+                <div class="timeline-item fade-in-section">
+                    <div class="timeline-content fade-in-section">
+                        <h3>Research Assistant</h3>
+                        <h4>St. Michael's Hospital, Unity Health Toronto</h4>
+                        <h4>August 2025 – Present</h4>
+                        <br>
+                        <p>
+                            Head surgeon: Dr. Henry Ahn.
+                            <br>I collect and manage patient data on <strong>REDCap</strong> for a
+                            study examining the impact of <strong>BMI</strong> on post-operative recovery after ankle
+                            surgery,
+                            ensuring compliance with <strong>REB</strong> and <strong>GCP</strong> standards. I prepare
+                            clean,
+                            structured datasets through quality control and standardized outcome measures, enabling
+                            statistical
+                            analysis and potential predictive modeling. I collaborate closely with clinicians and
+                            researchers to
+                            refine study design, interpret findings, and integrate evidence-based insights into research
+                            workflows.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-section">
+                    <div class="timeline-content fade-in-section">
+                        <h3>Research Assistant</h3>
+                        <h4>University of Toronto, Department of Computer Science</h4>
+                        <h4>June 2025 – Present</h4>
+                        <br>
+                        <p>
+                            Under the supervision of Dr. Brian Harrington, I synthesized findings from over
+                            <strong>300+</strong> empirical
+                            articles to identify educational interventions, demonstrating precision in critical
+                            appraisal
+                            and
+                            research design. I streamlined the screening and categorization of more than
+                            <strong>200+</strong> articles
+                            using Microsoft Excel for inclusion and exclusion tracking in a literature mapping project.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-section">
+                    <div class="timeline-content fade-in-section">
+                        <h3>Researcher</h3>
+                        <h4>Computing Research Association (CRA)</h4>
+                        <h4>January 2025 – Present</h4>
+                        <br>
+                        <p>
+                            Mentored by Dr. Brian Harrington and Aditya Kulkarni, I conducted in-depth literature
+                            reviews and bias
+                            analyses of over <strong>300+</strong> articles to uncover patterns of instructor
+                            perception,
+                            employing
+                            evidence-based methods to support educational reform. I also designed and produced
+                            research-aligned
+                            instructional videos for ethics submission to experimentally assess implicit bias in CS1
+                            students,
+                            ensuring clarity and alignment with research objectives.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-section">
+                    <div class="timeline-content fade-in-section">
+                        <h3>Research Assistant</h3>
+                        <h4>Ontario Institute for Studies in Education, University of Toronto</h4>
+                        <h4>October 2024 – May 2025</h4>
+                        <br>
+                        <p>
+                            Under the guidance of Dr. Kaja Jasinska, I recruited and screened participants using
+                            <strong>REDCap</strong> and
+                            behavioral screening tools, ensuring data integrity across neurocognitive and
+                            <strong>fNIRS</strong>
+                            protocols. I facilitated multilingual engagement by communicating study protocols in
+                            Dari/Farsi,
+                            which enhanced recruitment and cultural accessibility within Afghan communities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item purple fade-in-section">
+                    <div class="timeline-content fade-in-section">
+                        <h3>Events Coordinator Volunteer</h3>
+                        <h4>University of Toronto Spine Program, Temerty Faculty of Medicine</h4>
+                        <h4>June 2025 – Present</h4>
+                        <br>
+                        <p>
+                            I collaborate with faculty, clinicians, and administrative staff to design promotional
+                            materials
+                            for departmental conferences and academic events, ensuring alignment with institutional
+                            branding. I have demonstrated strong time-management skills by meeting tight design
+                            deadlines
+                            and coordinating multiple events simultaneously.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item purple fade-in-section">
+                    <div class="timeline-content fade-in-section">
+                        <h3>Publishing Associate</h3>
+                        <h4>UofT AI</h4>
+                        <h4>May 2025 – Present</h4>
+                        <br>
+                        <p>
+                            I write and edit original long-form content on artificial intelligence and its applications
+                            in healthcare, climate change, etc. focusing on Toronto’s innovation ecosystem. I
+                            collaborate with a team of student
+                            researchers and writers to distill complex scientific concepts into accessible formats under
+                            tight deadlines.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item purple fade-in-section">
+                    <div class="timeline-content fade-in-section">
+                        <h3>The Varsity Publications Inc.</h3>
+                        <h4>September 2023 – Present</h4>
+                        <br>
+                        <p><strong>Copy Editor and Writer:</strong> I write articles that translate
+                            peer-reviewed research into accessible content for 20,000+ readers. I also copy-edit
+                            articles for validity, clarity, and grammar, while collaborating closely with editors and
+                            writers
+                            under strict deadlines.
+                            <br><b>Sections: Science, Business and Labor, Feature</b>
+                        </p>
+                        <br>
+                        <p><strong>Staff Illustrator:</strong> I created visual content and illustrations to accompany
+                            articles and features, enhancing reader engagement through compelling graphics and layouts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

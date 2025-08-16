@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦋 Experience 🦋</title>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JavaScript file -->
+    <script src="script.js" defer></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Outfit:wght@100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<style>
+    .writing-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 25px;
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .writing-card {
+        background: #fff9fb;
+        border-radius: 12px;
+        padding: 20px;
+        text-decoration: none;
+        color: #333;
+        transition: all 0.3s ease;
+        border: 1px solid #ffdeeb;
+        box-shadow: 0 3px 10px rgba(232, 67, 147, 0.05);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .writing-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(232, 67, 147, 0.15);
+        border-color: #e84393;
+    }
+
+    .writing-icon {
+        font-size: 2rem;
+        margin-bottom: 15px;
+        color: #e84393;
+    }
+
+    .writing-card h3 {
+        font-family: 'DM Serif Text', serif;
+        color: #d23669;
+        margin: 0 0 10px 0;
+        font-size: 1.2rem;
+    }
+
+    .writing-card p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        flex-grow: 1;
+    }
+
+    .writing-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: auto;
+    }
+
+    .writing-tags span {
+        background: #ffdeeb;
+        color: #d23669;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+
+    @media (max-width: 600px) {
+        .writing-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<body>
+    <div id="preloader"
+        style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: white; display: flex; align-items: center; justify-content: center; z-index: 9999;">
+        <lottie-player src="https://lottie.host/244fb894-dafa-4b5c-8b48-821c1faa7ae9/4aoVbbHQLN.json"
+            background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay>
+        </lottie-player>
+    </div>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            setTimeout(() => {
+                preloader.classList.add('hidden');
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 600);
+            }, 1500);
+        });
+    </script>
+
+    <style>
+        #preloader.hidden {
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+    </style>
+
+
+    <header class="portfolio-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#introduction">🦋</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Main Site</a></li>
+                    <li><a href="https://www.linkedin.com/in/zuhalolomi/" aria-label="LinkedIn" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/ZuhalOlomi" aria-label="GitHub" target="_blank"><i
+                                class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="fade-in-section"
+            style="max-width: 800px; margin: 40px auto 60px auto; text-align: center; font-family: 'Lexend', sans-serif;">
+            <h1 style="font-weight: 600; font-size: 3rem; color: #292929; margin-bottom: 0.2em; letter-spacing: 1.5px;">
+                Beyond the Lab & Classroom
+            </h1>
+            <p style="font-weight: 300; font-size: 1.25rem; color: #555;">
+                <br>Few people know that I've been drawn to the writing craft since I could string letters into
+                words, and from that string, braid an entire solar system out of my imagination.
+                <br>Here I go again...
+                <br>
+                <br>I used to engage in a lot of creative writing in the past. I wrote three novel length stories (50 000+ words) for fun during the COVID-19 Pandemic, 
+                but now I've shifted my focus to technical writing.
+            </p>
+        </section>
+
+        <div class="writing-grid">
+
+
+            <a href="https://www.torontopubliclibrary.ca/content/teens/pdfs/young-voices-2020.pdf" target="_blank"
+                class="writing-card">
+                <div class="writing-icon">📄</div>
+                <h3>one of a kind, (pg. 55)</h3>
+                <h4>Published 2020</h4>
+                <p>
+                    A reflective dual-voiced poem that explores internal dialogue during adversity, ultimately
+                    celebrating inner strength and resilience.
+                </p>
+                <div class="writing-tags">
+                    <span>Creative Writing</span>
+                    <span>Poetry</span>
+                </div>
+            </a>
+
+            <a href="https://www.torontopubliclibrary.ca/content/teens/pdfs/young-voices-2021.pdf" target="_blank"
+                class="writing-card">
+                <div class="writing-icon">📄</div>
+                <h3>Not Your World (pg. 74)</h3>
+                <h4>Published 2021</h4>
+                <p align="justify">
+                    I wrote this poem during the COVID-19 pandemic. This poem delves into themes of personal loss
+                    and emotional perseverance during uncertain times.
+                </p>
+                <div class="writing-tags">
+                    <span>Creative Writing</span>
+                    <span>Poetry</span>
+                </div>
+            </a>
+            <a href="https://thevarsity.ca/2024/11/17/insights-from-the-2024-toronto-neurology-update/" target="_blank"
+                class="writing-card">
+                <div class="writing-icon">🩺</div>
+                <h3>Insights from the 2024 Toronto Neurology Update</h3>
+                <h4>Published 2024</h4>
+                <p align="justify">
+                    A technical article summarizing key insights and innovations presented at the Toronto Neurology
+                    Update 2024, with personal commentary on the evolving state of neurological research.
+                </p>
+                <div class="writing-tags">
+                    <span>Technical Writing</span>
+                    <span>Article</span>
+                </div>
+            </a>
+
+            <a href="https://medium.com/@zuhalolomi/breaking-into-research-a-students-guide-to-getting-started-cf780f2bdb53"
+                target="_blank" class="writing-card">
+                <div class="writing-icon">👩‍💻</div>
+                <h3>Breaking Into Research: A Student’s Guide to Getting Started
+                </h3>
+                <h4>Published 2025</h4>
+                <p align="justify">
+                    Talking to a lot of undergraduate students passionate about research, I realized there was a gap in
+                    the mentorship needed to propell students forward.
+                    This article serves as a practical guide aimed at undergraduate students seeking to enter the world of research. Covers
+                    strategies for networking with academics, avoiding common pitfalls, and building authentic
+                    connections.
+                </p>
+                <div class="writing-tags">
+                    <span>Guide</span>
+                    <span>Personal</span>
+                </div>
+            </a>
+
+            <a href="XXX" target="_blank"
+                class="writing-card">
+                <div class="writing-icon">🩻</div>
+                <h3>SpineFEST 2025: Spotlight in Spine Care Research</h3>
+                <h4>Expected 2025</h4>
+                <p align="justify">
+                    Coverage of SpineFEST 2025, a conference highlighting breakthroughs in spinal care. Offers a
+                    personal lens on innovations that transformed the author's understanding of musculoskeletal
+                    research. </p>
+                <div class="writing-tags">
+                    <span>Creative Writing</span>
+                    <span>Poetry</span>
+                </div>
+            </a>
+
+            <a href="XXX" target="_blank"
+                class="writing-card">
+                <div class="writing-icon">🧎‍♀️‍➡️</div>
+                <h3>When Philosophy Meets Medicine</h3>
+                <h4>Expected 2025</h4>
+                <p align="justify">
+                    A deeply introspective essay blending philosophical thought with the practice of medicine, inspired
+                    by Paul Kalanithi’s memoir. Reflects on mortality, purpose, and the human condition in healthcare.
+                </p>
+                <div class="writing-tags">
+                    <span>Creative Writing</span>
+                    <span>Poetry</span>
+                </div>
+            </a>
+
+            <a href="XXX" target="_blank"
+                class="writing-card">
+                <div class="writing-icon">🧎‍♀️‍➡️</div>
+                <h3>How AI Undermines Climate Action Focusing on Water Inefficiency in AI</h3>
+                <h4>Expected 2025</h4>
+                <p align="justify">
+                    An investigative article exploring the environmental cost of AI systems, particularly water usage.
+                    Advocates for responsible AI development and environmental accountability in the tech industry. </p>
+                <div class="writing-tags">
+                    <span>Creative Writing</span>
+                    <span>Poetry</span>
+                </div>
+            </a>
+
+
+
+        </div>
+        </section>
+
+
+
+
+
+    </main>
+
+</body>
+
+</html>
